@@ -43,4 +43,37 @@ function solution(friends, gifts) {
     }
 
     return Math.max(...nextGiftMax);
+
+    // const length = friends.length;
+    // const giftPoint = new Array(length).fill(0);
+    // const giftIndex = {};
+    // const record = [];
+    // const points = new Array(length).fill(0);
+
+    // for (let i = 0; i < length; i++) {
+    //     record[i] = new Array(length).fill(0);
+    //     giftIndex[friends[i]] = i;
+    // }
+
+    // for(const gift of gifts) {
+    //     const [giver, taker] = gift.split(' ');
+    //     record[giftIndex[giver]][giftIndex[taker]] += 1;
+    //     giftPoint[giftIndex[giver]] += 1;
+    //     giftPoint[giftIndex[taker]] -= 1;
+    // }
+
+    // for (let i = 0; i < length; i++) {
+    //     for (let j = 0; j < length; j++) {
+    //         if(record[i][j] > record[j][i]) {
+    //             points[i] += 1;
+    //         } else if(record[i][j] === record[j][i]) {
+    //             if(giftPoint[i] > giftPoint[j]) {
+    //                 points[i] += 1;
+    //             }
+    //         }
+    //     }
+        
+    // }
+
+    // return Math.max(...points);
 }
